@@ -1,0 +1,96 @@
+{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/NdS73tY5eikmphytd/concept-family-shopping-in-a-mall-in-blur-tired-child-comes-with-its-parent_bfjvz6tng_thumbnail-full01.png");
+	backgroud-repeat: no-repeat;
+	background-size: 100% 1000px;
+}
+
+h1 {
+	text-align: center;
+	padding: 10px;
+	font-family: 'Aladin';
+	color:Black;
+}
+h2{
+	
+	font-family: 'Aladin';
+	color: Black;
+}
+
+.register {
+	
+	width: 500px;
+	margin: auto;
+	color: white;
+	font-size: 18px; 
+	padding: 20px;
+	border: solid;
+	border-radius: 10px;
+	font-type: italic bold;
+	border-size: 10px;
+}
+
+#register {
+	margin-left: 50px;
+}
+
+label {
+	color: Black;
+	font-family: 'Aladin';
+	font-size: 18px;
+	font-type: bold;
+	border: hidden;
+	border-width: 1px;
+}
+
+#name{
+	width: 300px;
+	border: outset;
+	border-color: #804600;
+	border-radius: 3px;
+	outline: 0;
+	padding: 7px;
+	border: solid;
+	border-width: 1px;
+}
+
+#ph {
+	width: 65px;
+	padding: 7px;
+	border: solid;
+	border-radius: 3px;
+	outline: 0;
+	border-width: 1px;
+}
+
+#num {
+	width: 230px;
+	padding: 7px;
+	border: solid;
+	border-radius: 3px;
+	outline: 0;
+	border-width: 1px;
+}
+#male{
+	color: Black;
+	font-family: 'Aladin';
+	font-size: 18px;
+}
+
+#sub {
+	width: 80px;
+	padding: 7px;
+	font-size: 16px;
+	font-family: 'Aladin';
+	font-style: italic;
+	font-weight: 600;
+	border: outset;
+	border-radius: 3px;
+	outline: 0;
+	border-color:Black;
+	border-width: 5px;
+}
