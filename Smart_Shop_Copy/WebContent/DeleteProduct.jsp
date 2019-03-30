@@ -61,7 +61,7 @@
         
             <tr>
                 <td><%=productBean.getProduct_Name() %></td>
-                <td><%=productBean.getProduct_Image() %></td>
+                <td><a href="ViewImageServlet?id=<%=productBean.getProduct_Name()%>" >Show Image</a></td>
                 <td><%=productBean.getItem() %></td>
                 <td><%=productBean.getDom() %></td>
                 <td><%=productBean.getDoe() %></td>

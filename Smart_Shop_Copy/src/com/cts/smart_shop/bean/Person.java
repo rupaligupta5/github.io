@@ -2,7 +2,7 @@ package com.cts.smart_shop.bean;
 
 public class Person {
 	 
-    private Long id;
+    private String id;
     private String name;
     private byte[] imageData;
     private String imageFileName;
@@ -11,18 +11,18 @@ public class Person {
  
     }
  
-    public Person(Long id, String name, String imageFileName, byte[] imageData) {
+    public Person(String id, String name, String imageFileName, byte[] imageData) {
         this.id = id;
         this.name = name;
         this.imageData = imageData;
         this.imageFileName = imageFileName;
     }
  
-    public Long getId() {
+    public String getId() {
         return id;
     }
  
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
  

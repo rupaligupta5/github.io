@@ -69,7 +69,7 @@ window.location = elm.value;
                                 	${product.product_Name}   
                           </td>
                           <td>
-                           		 	${product.product_Image}
+                           		 	<a href="ViewImageServlet?id=${product.product_Name}" >Show Image</a>
                           </td>
                           <td>
                             	 	${product.item}

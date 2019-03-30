@@ -24,14 +24,14 @@ public class ViewImageServlet extends HttpServlet {
         super();
     }
 
-    private Person getImageInTable(Connection conn, Long id) throws SQLException {
-    	 String sql = "Select * from product_list where Product_name=?";
+    private Person getImageInTable(Connection conn, String id) throws SQLException {
+    	 String sql = "Select * from product_list where Product_Name=?";
          PreparedStatement pstm = conn.prepareStatement(sql);
-         pstm.setLong(1, id);
+         pstm.setString(1, id);
          Person p = null;
          ResultSet rs = pstm.executeQuery();
          if (rs.next()) {
-             String name = rs.getString("Product_name");
+             String name = rs.getString("Product_Name");
              byte[] imageData = rs.getBytes("Product_Image");
              String imageFileName = rs.getString("Location");
              return new Person(id, name, imageFileName, imageData);}
@@ -46,11 +46,11 @@ public class ViewImageServlet extends HttpServlet {
 	      try {
 	        
 	          conn = DBConnection.getConnection();
-	          Long id = null;
-        	  System.out.println(request.getParameter("id"));
+	          String id = null;
+        	  System.out.println("In view image controller"+ request.getParameter("id"));
 
 	          try {	         
-	        	id =1L;  
+	        	id =request.getParameter("id");  
 	          } catch (Exception e) {
 	 
 	          }
@@ -86,7 +86,7 @@ public class ViewImageServlet extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		doGet(request, response);
+		//doGet(request, response);
 	}
 
 }
